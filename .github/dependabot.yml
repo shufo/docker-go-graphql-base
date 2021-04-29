@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+  ignore:
+  - dependency-name: golang
+    versions:
+    - 1.15.7.pre.alpine
+    - 1.15.8.pre.alpine
+    - 1.16.0.pre.alpine
+    - 1.16.1.pre.alpine
+    - 1.16.2.pre.alpine
